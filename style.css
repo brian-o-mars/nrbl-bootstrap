@@ -12,6 +12,9 @@
 
 
 .body{
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
     color: var(--Secondary);
     width: 100%
 }
@@ -54,8 +57,7 @@ background-color: var(--Secondary);
 
 .carousel-inner > .carousel-item > img 
 {
-    /* width:640px; 
-    height:360px; */
+
   background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,4 +65,12 @@ background-color: var(--Secondary);
 
 .carousel-caption {
     font-size: large;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.opos {
+    height: 600px;
 }
