@@ -1,0 +1,66 @@
+:root {
+    --Primary: #2a7c6f;
+    --Secondary: #fffefc;
+    --red-color-20: #c65652;
+    --red-color-30: #cc6965;
+    --red-color-40: #d27c79;
+    --red-color-50: #d98e8c;
+    --red-color-60: #dfa19f;
+    --red-color-70: #e5b4b2;
+    --red-color-80: #ecc7c5;
+}
+
+
+.body{
+    color: var(--Secondary);
+    width: 100%
+}
+
+.hero-image{
+    background-image: url('images/andy-dutton-5lGMYhy9b78-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--Secondary);
+}
+
+.navbar {
+    background-color: var(--Secondary);
+}
+
+.navbar-brand {
+    color: var(--Primary);
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--Primary);
+}
+
+.active {
+    color: var(--Primary);
+    font-weight: 500;
+}
+
+.tPrimary {
+color: var(--Primary);
+background-color: var(--Secondary);
+}
+
+.tSecondary {
+    color: var(--Secondary);
+    background-color: var(--Primary);
+}
+
+.carousel-inner > .carousel-item > img 
+{
+    /* width:640px; 
+    height:360px; */
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-caption {
+    font-size: large;
+}
