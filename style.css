@@ -1,76 +1,113 @@
 :root {
-    --Primary: #2a7c6f;
-    --Secondary: #fffefc;
-    --red-color-20: #c65652;
-    --red-color-30: #cc6965;
-    --red-color-40: #d27c79;
-    --red-color-50: #d98e8c;
-    --red-color-60: #dfa19f;
-    --red-color-70: #e5b4b2;
-    --red-color-80: #ecc7c5;
+  --Primary: #2a7c6f;
+  --Secondary: #fffefc;
+  --red-color-20: #c65652;
+  --red-color-30: #cc6965;
+  --red-color-40: #d27c79;
+  --red-color-50: #d98e8c;
+  --red-color-60: #dfa19f;
+  --red-color-70: #e5b4b2;
+  --red-color-80: #ecc7c5;
 }
 
-
-.body{
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
-    color: var(--Secondary);
-    width: 100%
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--Secondary);
+  width: 100%;
 }
 
-.hero-image{
-    background-image: url('images/andy-dutton-5lGMYhy9b78-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--Secondary);
+.hero-image {
+  background-image: url("images/andy-dutton-5lGMYhy9b78-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Secondary);
 }
 
 .navbar {
-    background-color: var(--Secondary);
+  background-color: var(--Secondary);
 }
 
 .navbar-brand {
-    color: var(--Primary);
-    font-weight: bold;
+  color: var(--Primary);
+  font-weight: bold;
 }
 
 .nav-link {
-    color: var(--Primary);
+  color: var(--Primary);
 }
 
 .active {
-    color: var(--Primary);
-    font-weight: 500;
+  color: var(--Primary);
+  font-weight: 500;
 }
 
 .tPrimary {
-color: var(--Primary);
-background-color: var(--Secondary);
+  color: var(--Primary);
+  background-color: var(--Secondary);
 }
 
 .tSecondary {
-    color: var(--Secondary);
-    background-color: var(--Primary);
+  color: var(--Secondary);
+  background-color: var(--Primary);
 }
 
-.carousel-inner > .carousel-item > img 
-{
-
+.carousel-inner > .carousel-item > img {
   background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .carousel-caption {
-    font-size: large;
+  font-size: large;
 }
 
 .footer {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 .opos {
-    height: 600px;
+  height: 600px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  color: var(--Secondary);
+  background-color: var(--Primary);
+}
+
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  color: var(--Primary);
+  background-color: var(--Secondary);
+}
+
+.table-striped > thead > tr > th {
+  color: var(--Primary);
+  background-color: var(--Secondary);
+}
+
+.filter-green {
+  filter: invert(39%) sepia(68%) saturate(352%) hue-rotate(121deg)
+    brightness(92%) contrast(94%);
+}
+
+.filter-white {
+  filter: invert(98%) sepia(10%) saturate(602%) hue-rotate(321deg)
+    brightness(109%) contrast(103%);
+}
+
+.articleLink {
+  all: unset;
+  cursor: pointer;
+}
+
+.articleLink:hover {
+  font-weight: 600;
+}
+
+.fan {
+    font-weight:bold;
 }
