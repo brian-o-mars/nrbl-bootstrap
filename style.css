@@ -1,13 +1,7 @@
 :root {
   --Primary: #2a7c6f;
   --Secondary: #fffefc;
-  --red-color-20: #c65652;
-  --red-color-30: #cc6965;
-  --red-color-40: #d27c79;
-  --red-color-50: #d98e8c;
-  --red-color-60: #dfa19f;
-  --red-color-70: #e5b4b2;
-  --red-color-80: #ecc7c5;
+  --bs-body-font-family: 'Playfair Display', serif;
 }
 
 .body {
@@ -42,14 +36,29 @@
   width: 250px;
 }
 
+.mask {
+  width: 100%;
+  height: 100%;
+}
+
 /* index.html */
 .hero-image {
   background-image: url("images/andy-dutton-5lGMYhy9b78-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--Secondary);
+  
 }
+
+/* .hero-image .mask:before {
+  content: "";
+  background: linear-gradient(0deg, #000000d5, #00000069 100%);
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+} */
 
 .navbar {
   background-color: var(--Secondary);
@@ -64,9 +73,33 @@
   color: var(--Primary);
 }
 
-@media (min-width: 767px) {
-  .navlb {
+.hero-image {
+  height: 600px;
+}
+
+.navbrand2 {
+  display: none;
+  margin-bottom: 0;
+}
+.hero-heading {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hero-image {
+    height: 400px;
+  }
+  
+  .navbrand1 {
     display: none;
+  }
+  .navbrand2 {
+    display: block;
+    margin: 0;
+  }
+  .navbrand2h1 {
+    font-weight: bold;
+    margin-bottom: 0;
   }
 }
 
@@ -95,6 +128,10 @@
   .carousel-caption > h2 {
     font-weight: bolder;
   }
+  .navlb {
+    display: none;
+  }
+  
 }
 
 @media (min-width: 1280px) {
@@ -108,6 +145,7 @@
   .carousel-caption > h2 {
     font-weight: bolder;
   }
+  
 }
 
 @media (min-width: 1600px) {
@@ -120,6 +158,7 @@
   .carousel-caption > h2 {
     font-weight: bolder;
   }
+  
 }
 
 #carouselExampleAutoplaying .carousel-item:before {
