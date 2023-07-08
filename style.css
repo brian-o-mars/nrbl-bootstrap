@@ -73,6 +73,10 @@
   color: var(--Primary);
 }
 
+/* .navitems {
+  align-items: end;
+} */
+
 .hero-image {
   height: 600px;
 }
