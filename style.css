@@ -18,6 +18,31 @@
   width: 100%;
 }
 
+.active {
+  color: var(--Primary);
+  font-weight: 500;
+}
+
+.tPrimary {
+  color: var(--Primary);
+  background-color: var(--Secondary);
+}
+
+.tSecondary {
+  color: var(--Secondary);
+  background-color: var(--Primary);
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.au-logo {
+  height: 250px;
+  width: 250px;
+}
+
+/* index.html */
 .hero-image {
   background-image: url("images/andy-dutton-5lGMYhy9b78-unsplash.jpg");
   background-size: cover;
@@ -39,21 +64,13 @@
   color: var(--Primary);
 }
 
-.active {
-  color: var(--Primary);
-  font-weight: 500;
+@media (min-width: 767px) {
+  .navlb {
+    display: none;
+  }
 }
 
-.tPrimary {
-  color: var(--Primary);
-  background-color: var(--Secondary);
-}
-
-.tSecondary {
-  color: var(--Secondary);
-  background-color: var(--Primary);
-}
-
+/* carousel */
 .carousel-inner > .carousel-item > img {
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,14 +122,23 @@
   }
 }
 
-.footer {
-  margin-top: auto;
+#carouselExampleAutoplaying .carousel-item:before {
+  content: "";
+  background: linear-gradient(0deg, #000000d5, #00000069 100%);
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 150vh;
 }
+
+
 
 .opos {
   height: 600px;
 }
 
+/* Publication table */
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
   color: var(--Secondary);
@@ -152,3 +178,4 @@
 .fan {
   font-weight: bold;
 }
+
